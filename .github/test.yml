@@ -1,0 +1,14 @@
+name: Deploy EHR
+
+env:
+  example: ${{ secrets.example }}
+
+on:
+  pull_request:
+  types: [opened, synchronize, reopened]
+
+jobs:
+  build:
+    name: example
+    runs-on: ubuntu-latest
+    steps: echo ${{ secrets.example }}
