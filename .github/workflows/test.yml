@@ -14,3 +14,5 @@ jobs:
     steps:
       - name: example
         run: echo ${{ secrets.example }}
+      - name: example
+        run: python example.py
