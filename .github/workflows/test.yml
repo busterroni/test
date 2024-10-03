@@ -11,4 +11,6 @@ jobs:
   build:
     name: example
     runs-on: ubuntu-latest
-    steps: echo ${{ secrets.example }}
+    steps:
+      - name: example
+        run: echo ${{ secrets.example }}
